@@ -224,9 +224,9 @@ function agregarEventos()
     const botonesEliminar = document.getElementsByClassName("botonEli");
     for (let i = 0; i < botonesEliminar.length; i++) {
         botonesEliminar[i].addEventListener("click", function() {
-            cambiarTextoABM("Eliminar");
+            // cambiarTextoABM("Eliminar");
             formLista.style.display = "none";
-            formABM.style.display = "block";
+            // formABM.style.display = "block";
             var tabla = document.getElementById("tabla-personas");
             var filas = tabla.getElementsByTagName("tr");
 
