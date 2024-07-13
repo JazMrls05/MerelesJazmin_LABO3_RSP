@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperatorio Segundo Parcial, Jazmin Mereles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main>
+        <div id = "spinner" class='spinner'></div>
+        <div id = "formulario-lista" class = "data">
+
+            <table id = "tabla-personas" border="2">
+
+                <thead> 
+                
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <button class = "boton" id = "btn-agregar-persona">Agregar persona</button>
+        </div>
+        <div id="formABM" class = "data">
+                <h1 id="ABM_text">Formulario</h1>
+                    <form id= "agregar-atributos">
+                        <div>
+                            <div>
+                                <input type = "number" id = "inputId" class = "elemento-abm" placeholder = "Digite su id..." >
+                            </div>
+                            <div>
+                                Nombre:
+                                <input type = "text" id = "nombreInput" class = "elemento-abm" placeholder = "Digite su nombre..." >
+                            </div>
+                            <div>
+                                Apellido:
+                                <input type = "text" id = "apellidoInput" class = "elemento-abm" placeholder = "Digite su apellido..." >
+                            </div>
+                            <div>
+                                Edad:
+                                <input type = "number" id = "edadInput" class = "elemento-abm" placeholder = "Digite su edad..." >
+                            </div>
+                            <div>
+                                Tipo:
+                                <select id= "selectTipo" class = "elemento-abm" >
+                                    <option value = "heroe">Heroe</option>
+                                    <option value = "villano">Villano</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label id = "labelAtrTipo1">AlterEgo:</label> 
+                                <input type = "text" id = "inputAtrTipo1" class = "elemento-abm" placeholder = "" >
+                            </div>
+                            <div>
+                                <label id = "labelAtrTipo2">Ciudad:</label> 
+                                <input type = "text" id = "inputAtrTipo2" class = "elemento-abm" placeholder = "" >
+                            </div>
+                            <div>
+                                <label id = "labelAtrTipo3">Publicado:</label> 
+                                <input type = "number" id = "inputAtrTipo3" class = "elemento-abm" placeholder = "" >   
+                            </div> 
+
+                            
+                        </div>
+                    </form>
+                    <button  id = "enviarDatos" class = "boton" type = "submit" >Aceptar</button>
+                    <button id = "cancelar" class = "boton" >Cancelar</button>
+            </div>
+
+
+    </main>
+   
+    <script src = "script.js"></script> 
+</body>
+</html>
