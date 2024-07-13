@@ -173,7 +173,7 @@ selectTipo.addEventListener("change",function()
 {
     switch(selectTipo.value)
     {
-        case "Heroe":
+        case "heroe":
             atrTipoLabel1.textContent = "alterEgo:";
             atrTipoInput1.type = "text";
             atrTipoLabel2.textContent = "ciudad:";
@@ -181,7 +181,7 @@ selectTipo.addEventListener("change",function()
             atrTipoLabel3.textContent = "publicado:";
             atrTipoInput3.type = "number";
             break;
-        default:
+        case "villano":
             atrTipoLabel1.textContent = "enemigo:";
             atrTipoInput1.type = "text";
             atrTipoLabel2.textContent = "robos:";
@@ -457,22 +457,6 @@ function darAltaPersona(persona)
     });
 }
 
-// function darAltaPersona(persona)
-// {
-//     return consultaPOST(persona)
-//         .then(data => {
-//             persona.id = data.id;
-//             lista.push(persona);
-//             mostrarFormListado();
-//             return data;
-//         })
-//         .catch(error => {
-//             throw error;
-//         });
-    
-// }
-//endregion
-
 //#region MODIFICACIÓN
 
 
@@ -495,6 +479,7 @@ async function modificarPersona(persona)
             const respuesta = await response.text();
 
             let personaModificada;
+            
 
         if (persona instanceof Heroe) {
             personaModificada = new Heroe(
